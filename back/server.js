@@ -1,18 +1,15 @@
 const express = require("express");
 const cors = require("cors");
+require('dotenv').config();
 
 const app = express();
 
 const db = require("./app/models");
 db.sequelize.sync({ force: true }).then(() => {
-    console.log("Tudo certo");
-  });
+  console.log("Tudo certo");
+});
 
-var cor = {
-  origin: "http://localhost:5000"
-};
-
-app.use(cors(cor));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
