@@ -42,7 +42,7 @@ ___
 ```
   A mensagem _"Tudo certo"_ deve aparecer no console.
 ___
-6. Em seguida, abra um segundo terminal e execute o comando 
+6. Em seguida, abra um segundo terminal e execute o comando;
 ```javascript
 	npm run site
 ```
